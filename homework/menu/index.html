@@ -15,16 +15,31 @@ vertical-align: top;
 box-sizing: border-box; }
 
 body {
-	overflow:hidden;
+	overflow:scroll;
+	overflow-y:scroll;
 	margin:0;
-	box-sizing: border-box;
 
 }
 
-@media screen and (min-width:50%){
-	.right{ width: 100%;}
-	.left{ width:100%; }
+@media screen and (max-width: 768px){
+	.wrapper{
+		min-height:180%;
+	}
+
+    .left{
+     	min-width:100%;
+     	max-height:90%;
+    }
+    .right{
+    	max-width:100%;
+    	height:90%;
+    }
+
+    .header{
+    	min-height:20%;
+    }
 }
+
 
 ul {
 	pointer-events: none;
@@ -60,10 +75,12 @@ li {
 	height:10%;
 	display:inline-block;
 	background-color:#F7F6F6;
+	transition: background-color 0.75s ease-in-out;
 }
 
 .header:hover{
-	background-color:#F2F2F2;
+	background-color:#535353;
+	transition: background-color 0.75s ease-in-out;
 
 }
 
@@ -82,7 +99,7 @@ li {
 	height:90%;
 	bottom:0;
 	position:absolute;
-	display:inline-block;
+	display:block;
 	background-color:#F2F2F2;
 	transition: background-color 0.75s ease-in-out;
 }
@@ -114,7 +131,7 @@ h2 {
 	font-size:36px;
 	color:#FF6F6F;
 	letter-spacing: 5px;
-	position:relative;
+	position:absolute;
 	margin-left:0.95em;
 	transition: color 1s ease-in-out;
 }
@@ -157,24 +174,6 @@ a:hover {
 
 <div class="wrapper">
 
-<div class="left">
-	
-	<h3>COFFEE</h3>
-
-		<ul>
-
-			<li>Cappucino <div id="price">$2.95</div> </li>
-			<li>Macchiato <div id="price">$3.80</div> </li></li>
-			<li>Espresso <div id="price">$3.25</div> </li></li>
-			<li>Java Chip <div id="price">$4.25</div> </li></li>
-			<li>Mocha <div id="price">$3.70</div> </li></li>
-
-
-		</ul>
-
-
-
-</div>
 
 <div class="right">
 	
@@ -194,6 +193,26 @@ a:hover {
 
 
 </div>
+
+<div class="left">
+	
+	<h3>COFFEE</h3>
+
+		<ul>
+
+			<li>Cappucino <div id="price">$2.95</div> </li>
+			<li>Macchiato <div id="price">$3.80</div> </li></li>
+			<li>Espresso <div id="price">$3.25</div> </li></li>
+			<li>Java Chip <div id="price">$4.25</div> </li></li>
+			<li>Mocha <div id="price">$3.70</div> </li></li>
+
+
+		</ul>
+
+
+
+</div>
+
 	
 <div class="header">
 	
