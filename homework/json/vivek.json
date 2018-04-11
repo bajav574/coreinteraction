@@ -1,0 +1,31 @@
+{
+	"name" : { 
+		"full" : "Vivek Arvind Bajaj",
+		"nickname" : "Viv"
+	},
+
+	"home" : {
+		"latitude":39.1377573,
+		"longitude":-84.5055621
+	},
+
+	"url" : { "website":"www.vivekbajajdes.com"
+	},
+
+	"favourites":{
+		
+		"colour":"#fdff3c",
+		
+		"books": {
+			"title":"Kafka On The Shore",
+			"author":"Haruki Murakami"
+		},
+
+
+		"tool":"Adobe InDesign",
+
+		"temperature" : 28
+
+	}
+	
+}
