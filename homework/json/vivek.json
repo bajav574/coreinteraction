@@ -1,8 +1,5 @@
 {
-	"name" : { 
-		"full" : "Vivek Arvind Bajaj",
-		"nickname" : "Viv"
-	},
+	"name" : ["Vivek", "Arvind", "Bajaj"],
 
 	"home" : {
 		"latitude":39.1377573,
