@@ -24,12 +24,12 @@
 		return random;
 	}
 
-	document.onmousemove = function(event){
+	document.onmousedown = function(event){
 		
 		//console.log(event);
 
 		var d = document.createElement("div");
-		d.style.backgroundColor = "hsl(" + randomInt(36,56) + ", 100%, 50%)"
+		d.style.backgroundColor = "hsl(" + randomInt(0,120) + ", 100%, 50%)"
 
 		var width = randomInt(10,200);
 		var height = randomInt(10,200);
